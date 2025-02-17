@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Tebak Gambar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="game.js" defer></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+  <div class="w-full max-w-md bg-white p-6 rounded-lg shadow-lg">
+    <h1 class="text-2xl font-semibold text-center mb-4">Game Tebak Gambar</h1>
+    <div id="image-container" class="mb-4">
+      <img id="game-image" alt="Image" class="w-full h-auto rounded-lg hidden">
+    </div>
+    <input type="text" id="answer" class="w-full p-2 border border-gray-300 rounded-lg mb-4" placeholder="Tebak gambar...">
+    <button id="submit-btn" class="w-full bg-blue-500 text-white p-2 rounded-lg">Kirim Jawaban</button>
+    <button id="randomize-btn" class="w-full bg-yellow-500 text-white p-2 rounded-lg mt-4 hidden">Acak Gambar</button>
+    <p id="result" class="text-center mt-4 text-lg"></p>
+  </div>
+</body>
+</html>
